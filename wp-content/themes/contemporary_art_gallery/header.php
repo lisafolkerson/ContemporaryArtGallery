@@ -18,16 +18,22 @@
 
 <header>
   <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+    <h1 class="mainTitle">
+      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home" >
         <?php bloginfo( 'name' ); ?>
       </a>
     </h1>
+    <div class="subNav">
+      <a href="#"><h2 class="lilNav">About</h2></a>
+      <a href="#"><h2 class="lilNav">News</h2></a>
+    </div>
+    <a href="#"><h3 class="left--header">Exhibitions</h3></a>
+    <a href="#"><h3 class="right--header">Artists</h3></a>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_locations' => 'primary'
-    )); ?>
+    <?php //wp_nav_menu( array(
+      //'container' => false,
+      //'theme_locations' => 'primary'
+    //)); ?>
   </div> <!-- /.container -->
 </header><!--/.header-->
 
