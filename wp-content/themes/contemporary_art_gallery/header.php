@@ -26,9 +26,10 @@
     </h1>
     <div class="subNav">
         <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=5"><h2 class="lilNav">About</h2></a>
-      <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=25 "><h2 class="lilNav">News</h2></a>
+      <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=40"><h2 class="lilNav">News</h2></a>
     </div>
-    <a href="Permalink: http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=10"><h3 class="left--header">Exhibitions</h3></a>
+    <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=10"><h3 class="left--header">Exhibitions</h3></a>
+
     <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=8"><h3 class="right--header">Artists</h3></a>
 
     <?php //wp_nav_menu( array(
