@@ -342,7 +342,9 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
                    Default Styling
    ========================================================================== */
 body {
-  color: #333; }
+  color: #333;
+  margin: 0;
+  padding: 0; }
 
 .container {
   max-width: 100%;
@@ -350,9 +352,7 @@ body {
   padding: 5% 15%; }
 
 .content {
-  float: left;
-  width: 65%;
-  margin-right: 8%; }
+  text-align: center; }
 
 .full {
   width: 100%; }
@@ -363,12 +363,14 @@ a {
   text-decoration: none; }
 
 a:hover {
-  color: #f0f0f0;
-  text-shadow: 0 3px 7px black; }
+  color: #F5EEF9; }
 
 /* paragraphs */
 p {
-  line-height: 1.5; }
+  font-family: 'Lora', times, serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.1 rem; }
 
 /*blockquotes*/
 blockquote {
@@ -431,7 +433,8 @@ pre {
 .header-container {
   position: fixed;
   width: 100%;
-  top: 0; }
+  top: 0;
+  text-align: center; }
 
 .mainTitle {
   font-family: 'Open Sans', sans-serif;
@@ -483,6 +486,21 @@ pre {
   top: 45%; }
 
 /* =============================================================================
+                   static landing page
+   ========================================================================== */
+.main .container .content p {
+  line-height: 1.5;
+  margin: 0 auto;
+  right: 0;
+  left: 0; }
+
+/* =============================================================================
+                 Artist Page
+   ========================================================================== */
+.page-id-8 {
+  background: red; }
+
+/* =============================================================================
                    Featured Image/ BG
    ========================================================================== */
 .container-with-background {
@@ -490,7 +508,9 @@ pre {
   background-repeat: no-repeat;
   background-position: 50%;
   background-attachment: fixed;
-  height: 1000px; }
+  height: 100vh;
+  padding-top: 240px;
+  text-align: center; }
 
 /* =============================================================================
                    Footer
@@ -500,7 +520,12 @@ footer {
 
 .footer-container {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  position: fixed;
+  max-height: 0;
+  bottom: 0%; }
+  .footer-container p {
+    font-size: 1rem; }
 
 /* =============================================================================
                    Navigation

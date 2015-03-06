@@ -1,8 +1,8 @@
 <?php get_header();  ?>
 <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 ?>
-<div style="background-image: url(<?php echo $url ?>)" class="main">
-  <div class="container container-with-background clearfix">
+<div class="main">
+  <div class="container container-with-background clearfix" style="background-image: url(<?php echo $url ?>)">
 
     <div class="content">
       <?php // Start the loop ?>

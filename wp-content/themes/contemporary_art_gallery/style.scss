@@ -24,6 +24,13 @@ img.alignright    { padding-left: 5px; }
 @import "normailize";
 
 @mixin bodyText {
+  font-family: 'Lora', times, serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.1 rem;
+}
+
+@mixin h2Title {
 
 }
 
@@ -57,6 +64,8 @@ img.alignright    { padding-left: 5px; }
 
 body {
   color:#333;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -66,10 +75,7 @@ body {
 }
 
 .content {
-  float:left;
-  width:65%;
-  margin-right: 8%;
-
+  text-align: center;
 }
 
 .full {
@@ -83,13 +89,13 @@ a {
 }
 
 a:hover {
-  color: #f0f0f0;
-  text-shadow: 0 3px 7px black;
+  color: #F5EEF9;
+  // text-shadow: 0 1px 1px black;
 }
 
 /* paragraphs */
 p {
-  line-height: 1.5;
+  @include bodyText;
 }
 
 /*blockquotes*/
@@ -163,6 +169,8 @@ pre {
   position: fixed;
   width: 100%;
   top: 0;
+  text-align: center;
+  
 }
 
 .mainTitle {
@@ -205,6 +213,28 @@ pre {
   top:45%;
 }
 
+
+/* =============================================================================
+                   static landing page
+   ========================================================================== */
+
+.main .container .content p {
+  line-height: 1.5;
+  // position: fixed;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+}
+
+
+/* =============================================================================
+                 Artist Page
+   ========================================================================== */
+.page-id-8 {
+  // this is the page with the artists
+  background: red;
+}
+
 /* =============================================================================
                    Featured Image/ BG
    ========================================================================== */
@@ -217,7 +247,16 @@ pre {
   background-repeat: no-repeat;
   background-position: 50%;
   background-attachment: fixed;
-  height: 1000px;
+  height: 100vh;
+  padding-top: 240px;
+  text-align: center;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  // right: 0;
+  // position: fixed;
+  // width: 100%;
+  // height: 100%;
 }
 
 /* =============================================================================
@@ -231,6 +270,13 @@ footer {
 .footer-container {
   width: 100%;
   text-align: center;
+  position: fixed;
+  max-height: 0;
+  bottom: 0%;
+
+  p {
+    font-size: 1rem;
+  }
 }
 
 
