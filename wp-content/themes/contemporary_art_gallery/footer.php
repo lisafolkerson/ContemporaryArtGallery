@@ -1,5 +1,5 @@
 <footer>
-  <div class="container">
+  <div class="container footer-container">
     <p>&copy; <?php echo get_the_author( 'nicename' ); ?> <?php echo date('Y'); ?></p>
   </div>
 </footer>

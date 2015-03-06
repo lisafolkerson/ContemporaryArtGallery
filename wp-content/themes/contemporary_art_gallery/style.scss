@@ -28,9 +28,16 @@ img.alignright    { padding-left: 5px; }
 }
 
 @mixin h1Title {
-  font-style: georgia, serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
-  position: fixed;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@mixin subNav {
+  font-family: 'Lora', times, serif;
+  text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
 }
@@ -38,7 +45,7 @@ img.alignright    { padding-left: 5px; }
 @mixin sideMenus {
   display: inline-block;
   float: left;
-  font-style: georgia, times, serif;;
+  font-family: 'Lora', times, serif;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -53,15 +60,15 @@ body {
 }
 
 .container {
-  max-width:1200px;
+  max-width:100%;
   margin:0 auto;
-  padding: 80px;
+  padding: 5% 15%;
 }
 
 .content {
   float:left;
   width:65%;
-  margin-right: 5%;
+  margin-right: 8%;
 
 }
 
@@ -76,7 +83,8 @@ a {
 }
 
 a:hover {
-  color: #A19F9E;
+  color: #f0f0f0;
+  text-shadow: 0 3px 7px black;
 }
 
 /* paragraphs */
@@ -145,6 +153,18 @@ pre {
                    Header
    ========================================================================== */
 
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 .mainTitle {
   @include h1Title;
   font-size: 3rem;
@@ -155,14 +175,15 @@ pre {
 }   
 
 .subNav {
-  @include h1Title;
+  @include subNav;
   top: 14%;
-  left: 45%;
+  left: 38%;
 
   .lilNav {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     display: inline-block;
     text-align: center;
+    margin: 0 30px;
   }
 }
 
@@ -180,10 +201,24 @@ pre {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg) translateY(-50);
   position: fixed;
-  right: 2%;
+  right: 1%;
   top:45%;
 }
 
+/* =============================================================================
+                   Featured Image/ BG
+   ========================================================================== */
+.wp-post-image {
+  // width: 500px;
+}
+
+.container-with-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed;
+  height: 1000px;
+}
 
 /* =============================================================================
                    Footer
@@ -191,6 +226,11 @@ pre {
 
 footer {
   clear:both;
+}
+
+.footer-container {
+  width: 100%;
+  text-align: center;
 }
 
 

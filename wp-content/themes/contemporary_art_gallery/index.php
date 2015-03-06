@@ -2,11 +2,23 @@
 <?php get_header(); ?>
 
 <div class="main">
-  <div class="container">
+  <div class="container clearfix">
 
     <div class="content">
     		<?php get_template_part( 'loop', 'index' );	?>
     </div> <!--/.content -->
+
+    <?php 
+    	if(have_posts()) {
+
+    		while (have_posts()) {
+    			the_post();
+
+    			
+    		}
+    	}
+
+     ?>
 
     <? //php get_sidebar(); ?>
 
@@ -14,3 +26,4 @@
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
+
