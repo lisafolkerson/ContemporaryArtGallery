@@ -161,7 +161,7 @@ pre {
    ========================================================================== */
 
 .header {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
 }
@@ -236,21 +236,25 @@ pre {
   // overflow: hidden;
 
   .header-container {
-    background: yellow;
+    // background: yellow;
+    position: relative;
   }
 
   .footer-container {
-    background: yellow;
+    // background: yellow;
+    position: relative;
   }
 
   h2 {
     font-size: 1.1rem;
     line-height: 3.6rem;
+    text-align: center;
   }
 
   p {
     font-size: 1.8rem;
     line-height: 2.2rem;
+    text-align: center;
   }
 }
 
@@ -272,6 +276,7 @@ pre {
   p {
     font-size: 1.8rem;
     line-height: 3.2rem;
+    text-align: center;
   }
 }
 
@@ -285,6 +290,7 @@ pre {
   p {
     font-size: 1.8rem;
     line-height: 3.2rem;
+    text-align: center;
 
   }
 }
@@ -292,24 +298,55 @@ pre {
 /* =============================================================================
                  News Page
    ========================================================================== */
-.page-id-5 {
+.blog {
   // this is the page with the news
-  background: orange;
-}
+  // color: orange;
 
-.customize-support {
-  // this is the page with the news
-  background: peachpuff;
-  margin-top: 9%;
-  width: 100%;
+  .customize-support {
+    // this is the page with the news
+    // background: peachpuff;
+    margin-top: 0%;
+    width: 100%;
+    }
 
   .content {
     text-align: left;
-    
+    border-top: 1px solid black;
   }
 
   .header-container {
-    background: peachpuff;
+    // background: peachpuff;
+    position: relative;
+  }
+
+  h2 {
+    border-top: 1px solid black;
+    width: 33%; 
+    position: relative;
+    top: -0.5rem;
+  }
+
+  .entry-content {
+    width: 66%;
+    float: right;
+    border-top: 1px solid black;
+    position: relative;
+    top: -3.6rem;
+    padding-bottom: 60px; 
+  }
+
+  .post {
+    // margin: 30px 0px;
+
+    img {
+      width:100%;
+      height:100%;
+    }
+  }
+
+  footer {
+    width: 33%;
+    float: left;
   }
 }
 
@@ -327,7 +364,7 @@ pre {
   background-position: 50%;
   background-attachment: fixed;
   height: 100vh;
-  padding-top: 240px;
+  padding-top: 0;
   text-align: center;
 
 }
@@ -343,7 +380,7 @@ footer {
 .footer-container {
   width: 100%;
   text-align: center;
-  position: fixed;
+  position: relative;
   max-height: 0;
   bottom: 0%;
 
