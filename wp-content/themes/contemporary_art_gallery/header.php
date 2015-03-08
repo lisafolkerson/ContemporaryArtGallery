@@ -25,8 +25,8 @@
       </a>
     </h1>
     <div class="subNav">
-        <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=5"><h2 class="lilNav">About</h2></a>
-      <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=40"><h2 class="lilNav">News</h2></a>
+        <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=40"><h2 class="lilNav">About</h2></a>
+      <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=5"><h2 class="lilNav">News</h2></a>
     </div>
     <a href="http://localhost/Week7_wordpress/WklyPrjct/ContemporaryArtGallery/?page_id=10"><h3 class="left--header">Exhibitions</h3></a>
 

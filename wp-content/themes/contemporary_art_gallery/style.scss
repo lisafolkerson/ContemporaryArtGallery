@@ -76,6 +76,7 @@ body {
 
 .content {
   text-align: center;
+  padding-bottom: 200px;
 }
 
 .full {
@@ -219,7 +220,7 @@ pre {
    ========================================================================== */
 
 .main .container .content p {
-  line-height: 1.5;
+  // line-height: 1.5;
   // position: fixed;
   margin: 0 auto;
   right: 0;
@@ -229,24 +230,27 @@ pre {
 /* =============================================================================
                  About Page
    ========================================================================== */
-.page-id-5 {
+.page-id-40 {
   // this is the page with the about
   background: yellow;
+  // overflow: hidden;
 
-  header {
+  .header-container {
     background: yellow;
   }
 
-  footer {
+  .footer-container {
     background: yellow;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    line-height: 3.6rem;
   }
 
   p {
     font-size: 1.8rem;
+    line-height: 2.2rem;
   }
 }
 
@@ -256,6 +260,19 @@ pre {
 .page-id-8 {
   // this is the page with the artists
   background: red;
+
+  // .header-container {
+  //   background: red;
+  // }
+
+  // .footer-container {
+  //   background: red;
+  // }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
 }
 
 /* =============================================================================
@@ -264,14 +281,36 @@ pre {
 .page-id-10 {
   // this is the page with the exhibitions
   background: thistle;
+
+  p {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+
+  }
 }
 
 /* =============================================================================
-                 Exhibition Page
+                 News Page
    ========================================================================== */
-.page-id-40 {
+.page-id-5 {
   // this is the page with the news
   background: orange;
+}
+
+.customize-support {
+  // this is the page with the news
+  background: peachpuff;
+  margin-top: 9%;
+  width: 100%;
+
+  .content {
+    text-align: left;
+    
+  }
+
+  .header-container {
+    background: peachpuff;
+  }
 }
 
 
@@ -290,13 +329,7 @@ pre {
   height: 100vh;
   padding-top: 240px;
   text-align: center;
-  // top: 0;
-  // left: 0;
-  // bottom: 0;
-  // right: 0;
-  // position: fixed;
-  // width: 100%;
-  // height: 100%;
+
 }
 
 /* =============================================================================

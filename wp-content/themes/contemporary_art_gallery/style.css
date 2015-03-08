@@ -352,7 +352,8 @@ body {
   padding: 5% 15%; }
 
 .content {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 200px; }
 
 .full {
   width: 100%; }
@@ -489,7 +490,6 @@ pre {
                    static landing page
    ========================================================================== */
 .main .container .content p {
-  line-height: 1.5;
   margin: 0 auto;
   right: 0;
   left: 0; }
@@ -497,34 +497,51 @@ pre {
 /* =============================================================================
                  About Page
    ========================================================================== */
-.page-id-5 {
+.page-id-40 {
   background: yellow; }
-  .page-id-5 header {
+  .page-id-40 .header-container {
     background: yellow; }
-  .page-id-5 footer {
+  .page-id-40 .footer-container {
     background: yellow; }
-  .page-id-5 h2 {
-    font-size: 1.2rem; }
-  .page-id-5 p {
-    font-size: 1.8rem; }
+  .page-id-40 h2 {
+    font-size: 1.1rem;
+    line-height: 3.6rem; }
+  .page-id-40 p {
+    font-size: 1.8rem;
+    line-height: 2.2rem; }
 
 /* =============================================================================
                  Artist Page
    ========================================================================== */
 .page-id-8 {
   background: red; }
+  .page-id-8 p {
+    font-size: 1.8rem;
+    line-height: 3.2rem; }
 
 /* =============================================================================
                  Exhibition Page
    ========================================================================== */
 .page-id-10 {
   background: thistle; }
+  .page-id-10 p {
+    font-size: 1.8rem;
+    line-height: 3.2rem; }
 
 /* =============================================================================
-                 Exhibition Page
+                 News Page
    ========================================================================== */
-.page-id-40 {
+.page-id-5 {
   background: orange; }
+
+.customize-support {
+  background: peachpuff;
+  margin-top: 9%;
+  width: 100%; }
+  .customize-support .content {
+    text-align: left; }
+  .customize-support .header-container {
+    background: peachpuff; }
 
 /* =============================================================================
                    Featured Image/ BG
