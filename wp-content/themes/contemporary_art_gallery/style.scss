@@ -68,6 +68,15 @@ body {
   padding: 0;
 }
 
+.home .content .container p {
+    max-width:100%;
+  margin:0 auto;
+  padding: 5% 15%;
+  padding-top: 30%;
+
+
+}
+
 .container {
   max-width:100%;
   margin:0 auto;
@@ -227,12 +236,16 @@ pre {
   left: 0;
 }
 
+.home .content {
+  padding-top: 30%
+}
+
 /* =============================================================================
                  About Page
    ========================================================================== */
 .page-id-40 {
   // this is the page with the about
-  background: yellow;
+  background: white;
   // overflow: hidden;
 
   .header-container {
@@ -263,7 +276,11 @@ pre {
    ========================================================================== */
 .page-id-8 {
   // this is the page with the artists
-  background: red;
+  background: white;
+
+  .content {
+    padding-top: 15%;
+  }
 
   // .header-container {
   //   background: red;
@@ -285,7 +302,11 @@ pre {
    ========================================================================== */
 .page-id-10 {
   // this is the page with the exhibitions
-  background: thistle;
+  background: white;
+
+  .content {
+    padding-top: 15%;
+  }
 
   p {
     font-size: 1.8rem;
@@ -319,7 +340,7 @@ pre {
     position: relative;
   }
 
-  h2 {
+  .entry-title {
     border-top: 1px solid black;
     width: 33%; 
     position: relative;
@@ -370,17 +391,30 @@ pre {
 }
 
 /* =============================================================================
+                   Single Post
+   ========================================================================== */
+
+.single-post {
+  text-align: center;
+
+  .content {
+    text-align: left;
+    padding: 200px 0;
+  }
+}
+
+/* =============================================================================
                    Footer
    ========================================================================== */
 
 footer {
-  clear:both;
+  // clear:both;
 }
 
 .footer-container {
   width: 100%;
   text-align: center;
-  position: relative;
+  position: absolute;
   max-height: 0;
   bottom: 0%;
 

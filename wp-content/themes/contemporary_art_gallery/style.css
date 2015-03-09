@@ -346,6 +346,12 @@ body {
   margin: 0;
   padding: 0; }
 
+.home .content .container p {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5% 15%;
+  padding-top: 30%; }
+
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -494,11 +500,14 @@ pre {
   right: 0;
   left: 0; }
 
+.home .content {
+  padding-top: 30%; }
+
 /* =============================================================================
                  About Page
    ========================================================================== */
 .page-id-40 {
-  background: yellow; }
+  background: white; }
   .page-id-40 .header-container {
     position: relative; }
   .page-id-40 .footer-container {
@@ -516,7 +525,9 @@ pre {
                  Artist Page
    ========================================================================== */
 .page-id-8 {
-  background: red; }
+  background: white; }
+  .page-id-8 .content {
+    padding-top: 15%; }
   .page-id-8 p {
     font-size: 1.8rem;
     line-height: 3.2rem;
@@ -526,7 +537,9 @@ pre {
                  Exhibition Page
    ========================================================================== */
 .page-id-10 {
-  background: thistle; }
+  background: white; }
+  .page-id-10 .content {
+    padding-top: 15%; }
   .page-id-10 p {
     font-size: 1.8rem;
     line-height: 3.2rem;
@@ -543,7 +556,7 @@ pre {
   border-top: 1px solid black; }
 .blog .header-container {
   position: relative; }
-.blog h2 {
+.blog .entry-title {
   border-top: 1px solid black;
   width: 33%;
   position: relative;
@@ -575,15 +588,21 @@ pre {
   text-align: center; }
 
 /* =============================================================================
+                   Single Post
+   ========================================================================== */
+.single-post {
+  text-align: center; }
+  .single-post .content {
+    text-align: left;
+    padding: 200px 0; }
+
+/* =============================================================================
                    Footer
    ========================================================================== */
-footer {
-  clear: both; }
-
 .footer-container {
   width: 100%;
   text-align: center;
-  position: relative;
+  position: absolute;
   max-height: 0;
   bottom: 0%; }
   .footer-container p {
