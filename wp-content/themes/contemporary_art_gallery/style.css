@@ -524,14 +524,12 @@ pre {
 /* =============================================================================
                  Artist Page
    ========================================================================== */
-.page-id-8 {
-  background: white; }
-  .page-id-8 .content {
-    padding-top: 15%; }
-  .page-id-8 p {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-    text-align: center; }
+.page-id-8 .content {
+  padding-top: 15%; }
+.page-id-8 p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-align: center; }
 
 /* =============================================================================
                  Exhibition Page
