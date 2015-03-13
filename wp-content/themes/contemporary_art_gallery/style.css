@@ -524,6 +524,16 @@ pre {
 /* =============================================================================
                  Artist Page
    ========================================================================== */
+.page-id-8 {
+  background-image: url('img/self_headoverheels3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 0;
+  text-align: center; }
+
 .page-id-8 .content {
   padding-top: 15%; }
 .page-id-8 p {
