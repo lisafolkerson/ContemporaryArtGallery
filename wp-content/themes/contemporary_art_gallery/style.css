@@ -438,7 +438,7 @@ pre {
   top: 0; }
 
 .header-container {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   text-align: center; }
@@ -524,8 +524,8 @@ pre {
 /* =============================================================================
                  Artist Page
    ========================================================================== */
-.page-id-8 {
-  background-image: url('img/self_headoverheels3.png');
+.bg-image {
+  background-image: url('<?php echo get_template_directory(); ?>/img/self_headoverheels3.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;

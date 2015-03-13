@@ -1,18 +1,31 @@
 <?php get_header();  ?>
 
-<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-?>
+
+  
 <div class="main">
-  <div class="container container-with-background clearfix" style="background-image: url(<?php echo $url ?>)">
+  <div id="nanana" class="container container-with-background clearfix" style="background-image: url(<?php echo $url; ?>)">
 
     <div class="content">
-      <?php // Start the loop ?>
-      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+    <?php $latestPosts = new WP_Query(array(
+        'post_type' => 'artist'
+    )) ?>
 
-        <h2><?php //the_title(); ?></h2>
-        <?php the_content(); ?>
+        <?php if($latestPosts->have_posts()) while($latestPosts->have_posts()) : $latestPosts->the_post() ?>
 
+
+      <h2><?php the_title(); ?></h2>
+      <?php $title= get_the_title() ?>
+     
+
+    <div class="postPhoto">
+    <?php the_post_thumbnail('full'); ?>
+    </div>
+
+      
+        
+        
       <?php endwhile; // end the loop?>
+      <?php wp_reset_postdata(); ?>
     </div> <!-- /,content -->
 
     <?php // get_sidebar(); ?>
