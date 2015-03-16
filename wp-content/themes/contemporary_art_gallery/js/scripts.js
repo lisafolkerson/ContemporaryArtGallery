@@ -1,12 +1,15 @@
 app = {};
 
-$('.tscha').mouseover(function(){
+$('.content h2').mouseover(function(){
 	console.log ('hover success!');
-	// $('#nanana').append('style="background-image: url(<?php echo the_post_thumbnail(\'large\'); ?>)"')‌​
+	var img = $(this).data('img');
+	console.log(img);
+	$('#bgimage').css({
+		background : 'url('+img+') center no-repeat',
+		backgroundSize : 'cover'
+	})
+	//$('#nanana').attr('style="background-image: url(<?php echo the_post_thumbnail(\'large\'); ?>)"')‌​;
 });
-
-	// function(){$(this).closest(parentSelector).removeClass('hoverClass')});
-
 
 $(function(){
 	// app.init();

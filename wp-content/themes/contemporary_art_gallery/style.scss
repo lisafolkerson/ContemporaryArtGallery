@@ -277,12 +277,12 @@ pre {
 }
 
  .bg-image { 
- background-image: url('<?php echo get_template_directory(); ?>/$url/self_headoverheels3.png');
+ // background-image: url('<?php echo get_template_directory(); ?>/$url/self_headoverheels3.png');
  background-size: cover;
  background-repeat: no-repeat;
  background-position: 50%;
  background-attachment: fixed;
- height: 100vh;
+ height: 100%;
  padding-top: 0;
  text-align: center;
 }

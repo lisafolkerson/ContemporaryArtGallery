@@ -3,27 +3,25 @@
 
   
 <div class="main">
-  <div id="nanana" class="container container-with-background clearfix" style="background-image: url(<?php echo $url; ?>)">
+  <div id="bgimage" class="container container-with-background clearfix">
 
     <div class="content">
     <?php $latestPosts = new WP_Query(array(
-        'post_type' => 'artist'
+        'post_type' => 'artist', //only want portfolio posts
     )) ?>
 
         <?php if($latestPosts->have_posts()) while($latestPosts->have_posts()) : $latestPosts->the_post() ?>
 
 
-      <h2><?php the_title(); ?></h2>
+      <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'large', true); ?>
+
+      <img src="<?php echo $url ?>" style="display:none;" alt="">
+
+      <h2 data-img="<?php echo $url; ?>"><?php the_title(); ?></h2>
       <?php $title= get_the_title() ?>
      
 
-    <div class="postPhoto">
-    <?php the_post_thumbnail('full'); ?>
-    </div>
-
-      
-        
-        
+            
       <?php endwhile; // end the loop?>
       <?php wp_reset_postdata(); ?>
     </div> <!-- /,content -->
