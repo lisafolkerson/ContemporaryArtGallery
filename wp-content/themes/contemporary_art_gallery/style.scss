@@ -167,11 +167,9 @@
    ========================================================================== */
 .blog {
   // this is the page with the news
-  // color: orange;
 
   .customize-support {
     // this is the page with the news
-    // background: peachpuff;
     margin-top: 0%;
     width: 100%;
     }
@@ -190,7 +188,7 @@
     border-top: 1px solid black;
     width: 33%; 
     position: relative;
-    top: -0.5rem;
+    top: -20px;
   }
 
   .entry-content {
@@ -200,10 +198,11 @@
     position: relative;
     top: -3.6rem;
     padding-bottom: 60px; 
+    top: -20px;
   }
 
   .post {
-    // margin: 30px 0px;
+    margin: 30px 0px;
 
     // $url {
     //   width:100%;

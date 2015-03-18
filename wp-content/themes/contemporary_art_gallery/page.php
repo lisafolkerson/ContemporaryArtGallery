@@ -17,7 +17,7 @@
 
       <img src="<?php echo $url ?>" style="display:none;" alt="">
 
-      <h2 data-img="<?php echo $url; ?>"><?php the_title(); ?></h2><br>
+      <h2 data-img="<?php echo $url; ?>"><a href="#"><?php the_title(); ?></a></h2><br>
       <?php //$title= get_the_title() ?>
       
      
