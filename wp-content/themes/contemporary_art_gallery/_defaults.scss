@@ -16,8 +16,8 @@ Author URI: http://www.lisafolkerson.com
 .aligncenter    { text-align: center; margin: 0 auto; }
 .alignleft      { float: left; }
 .alignright     { float: right; }
-// $url.alignleft     { padding-right: 5px;}
-// $url.alignright    { padding-left: 5px; }
+.alignleft     { padding-right: 5px;}
+.alignright    { padding-left: 5px; }
 .clear        { width:100%; float:left; clear:both;}
 
 @mixin bodyText {
@@ -70,7 +70,7 @@ body[style=background] {
 }
 
 .home .content .container p {
-    max-width:100%;
+  max-width:100%;
   margin:0 auto;
   padding: 5% 15%;
   padding-top: 30%;
@@ -119,6 +119,7 @@ blockquote {
   margin:0;
   padding:20px;
 }
+
   blockquote p {
     margin-top: 0;
   }

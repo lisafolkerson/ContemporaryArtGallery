@@ -213,15 +213,6 @@ pre {
 .postPhoto {
   display: none; }
 
-.bg-image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-attachment: fixed;
-  height: 100%;
-  padding-top: 0;
-  text-align: center; }
-
 .page-id-8 .content {
   padding: 0; }
   .page-id-8 .content h2 {
@@ -280,12 +271,10 @@ pre {
 /* =============================================================================
                    Featured Image/ BG
    ========================================================================== */
-.container-with-background {
+.bgimage {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
   background-attachment: fixed;
-  height: 100%;
   padding-top: 0;
   text-align: center; }
 

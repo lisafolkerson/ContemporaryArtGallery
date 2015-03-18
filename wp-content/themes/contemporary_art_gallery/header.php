@@ -15,7 +15,7 @@
 </head>
 
 
-<body <?php body_class('bgimage'); ?>>
+<body <?php body_class('bgimage'); ?> style="background-image : url('<?php echo $static ?>') cover no-repeat">
 
 <header class="clearfix">
   <div class="container header-container clearfix">
