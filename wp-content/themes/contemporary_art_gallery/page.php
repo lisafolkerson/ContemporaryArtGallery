@@ -7,7 +7,7 @@
 
     <div class="content">
     <?php $latestPosts = new WP_Query(array(
-        'post_type' => 'artist', //only want portfolio posts
+        'post_type' => 'artist', //only want artist posts
     )) ?>
 
         <?php if($latestPosts->have_posts()) while($latestPosts->have_posts()) : $latestPosts->the_post() ?>
@@ -17,8 +17,9 @@
 
       <img src="<?php echo $url ?>" style="display:none;" alt="">
 
-      <h2 data-img="<?php echo $url; ?>"><?php the_title(); ?></h2>
-      <?php $title= get_the_title() ?>
+      <h2 data-img="<?php echo $url; ?>"><?php the_title(); ?></h2><br>
+      <?php //$title= get_the_title() ?>
+      
      
 
             

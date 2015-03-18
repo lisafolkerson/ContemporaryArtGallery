@@ -4,7 +4,7 @@ $('.content h2').mouseover(function(){
 	console.log ('hover success!');
 	var img = $(this).data('img');
 	console.log(img);
-	$('#bgimage').css({
+	$('.bgimage').css({
 		background : 'url('+img+') center no-repeat',
 		backgroundSize : 'cover'
 	})

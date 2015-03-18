@@ -1,0 +1,172 @@
+/*
+Theme Name: Contemporary Art Gallery Theme
+Theme URI: http://www.lisafolkerson.com
+Description: Starter theme for building a website for an art gallery or artist.
+Version: 1.0
+Author: Lisa Folkerson
+Author URI: http://www.lisafolkerson.com
+*/
+
+
+// $url {
+//   max-width: 100%;
+// }
+
+/* Global Classes / Wordpress Specific */
+.aligncenter    { text-align: center; margin: 0 auto; }
+.alignleft      { float: left; }
+.alignright     { float: right; }
+// $url.alignleft     { padding-right: 5px;}
+// $url.alignright    { padding-left: 5px; }
+.clear        { width:100%; float:left; clear:both;}
+
+@mixin bodyText {
+  font-family: 'Lora', times, serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.1 rem;
+}
+
+@mixin h2Title {
+
+}
+
+@mixin h1Title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@mixin subNav {
+  font-family: 'Lora', times, serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@mixin sideMenus {
+  display: inline-block;
+  float: left;
+  font-family: 'Lora', times, serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+/* =============================================================================
+                   Default Styling
+   ========================================================================== */
+
+body {
+  color:#333;
+  margin: 0;
+  padding: 0;
+}
+
+body[style=background] {
+  width: 100%;
+}
+
+.home .content .container p {
+    max-width:100%;
+  margin:0 auto;
+  padding: 5% 15%;
+  padding-top: 30%;
+
+
+}
+
+.container {
+  max-width:100%;
+  margin:0 auto;
+  padding: 5% 15%;
+}
+
+.content {
+  text-align: center;
+  padding-bottom: 200px;
+
+  h2 {
+      display: inline;
+  }
+}
+
+.full {
+  width:100%;
+}
+
+/* links */
+a {
+  color:black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F5EEF9;
+  // text-shadow: 0 1px 1px black;
+}
+
+/* paragraphs */
+p {
+  @include bodyText;
+}
+
+/*blockquotes*/
+blockquote {
+  background: #F7F7F7;
+  margin:0;
+  padding:20px;
+}
+  blockquote p {
+    margin-top: 0;
+  }
+
+/*tables*/
+table td {
+  padding:10px;
+}
+table tr td:first {
+  padding-right: 0;
+}
+
+/*def lists*/
+dt {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+dd {
+  padding:10px;
+  margin-left: 10px;
+}
+
+/*lists*/
+ul li,ol li {
+  padding:3px;
+}
+
+/*PRE*/
+
+pre {
+  background: #F7F7F7;
+  padding:10px;
+  border-radius: 4px;
+  border:1px solid #ccc;
+}
+
+/* =============================================================================
+                   Sidebar
+   ========================================================================== */
+.sidebar {
+  width:30%;
+  float:left;
+}
+  .sidebar ul {
+    margin:0;
+    padding:0;
+  }
+    .sidebar ul li {
+      list-style: none;
+    }
+

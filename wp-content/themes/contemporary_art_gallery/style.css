@@ -6,9 +6,6 @@ Version: 1.0
 Author: Lisa Folkerson
 Author URI: http://www.lisafolkerson.com
 */
-img {
-  max-width: 100%; }
-
 /* Global Classes / Wordpress Specific */
 .aligncenter {
   text-align: center;
@@ -20,16 +17,312 @@ img {
 .alignright {
   float: right; }
 
-img.alignleft {
-  padding-right: 5px; }
-
-img.alignright {
-  padding-left: 5px; }
-
 .clear {
   width: 100%;
   float: left;
   clear: both; }
+
+/* =============================================================================
+                   Default Styling
+   ========================================================================== */
+body {
+  color: #333;
+  margin: 0;
+  padding: 0; }
+
+body[style=background] {
+  width: 100%; }
+
+.home .content .container p {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5% 15%;
+  padding-top: 30%; }
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5% 15%; }
+
+.content {
+  text-align: center;
+  padding-bottom: 200px; }
+  .content h2 {
+    display: inline; }
+
+.full {
+  width: 100%; }
+
+/* links */
+a {
+  color: black;
+  text-decoration: none; }
+
+a:hover {
+  color: #F5EEF9; }
+
+/* paragraphs */
+p {
+  font-family: 'Lora', times, serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1.1 rem; }
+
+/*blockquotes*/
+blockquote {
+  background: #F7F7F7;
+  margin: 0;
+  padding: 20px; }
+
+blockquote p {
+  margin-top: 0; }
+
+/*tables*/
+table td {
+  padding: 10px; }
+
+table tr td:first {
+  padding-right: 0; }
+
+/*def lists*/
+dt {
+  font-weight: 600;
+  padding-bottom: 5px; }
+
+dd {
+  padding: 10px;
+  margin-left: 10px; }
+
+/*lists*/
+ul li, ol li {
+  padding: 3px; }
+
+/*PRE*/
+pre {
+  background: #F7F7F7;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc; }
+
+/* =============================================================================
+                   Sidebar
+   ========================================================================== */
+.sidebar {
+  width: 30%;
+  float: left; }
+
+.sidebar ul {
+  margin: 0;
+  padding: 0; }
+
+.sidebar ul li {
+  list-style: none; }
+
+/* =============================================================================
+                   Header
+   ========================================================================== */
+.header {
+  position: relative;
+  width: 100%;
+  top: 0; }
+
+.header-container {
+  position: relative;
+  width: 100%;
+  top: 0;
+  text-align: center; }
+
+.mainTitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+  top: 6%;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.subNav {
+  font-family: 'Lora', times, serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  top: 14%;
+  left: 38%; }
+  .subNav .lilNav {
+    font-size: 1.1rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0 30px; }
+
+.left--header {
+  display: inline-block;
+  float: left;
+  font-family: 'Lora', times, serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: fixed;
+  left: -3%;
+  top: 45%; }
+
+.right--header {
+  display: inline-block;
+  float: left;
+  font-family: 'Lora', times, serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg) translateY(-50);
+  position: fixed;
+  right: 1%;
+  top: 45%; }
+
+/* =============================================================================
+                   static landing page
+   ========================================================================== */
+.main .container .content p {
+  margin: 0 auto;
+  right: 0;
+  left: 0; }
+
+/* =============================================================================
+                 About Page
+   ========================================================================== */
+.page-id-40 {
+  background: white; }
+  .page-id-40 .header-container {
+    position: relative; }
+  .page-id-40 .footer-container {
+    position: relative; }
+  .page-id-40 h2 {
+    font-size: 1.1rem;
+    line-height: 3.6rem;
+    text-align: center; }
+  .page-id-40 p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: center; }
+
+/* =============================================================================
+                 Artist Page
+   ========================================================================== */
+.postPhoto {
+  display: none; }
+
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed;
+  height: 100%;
+  padding-top: 0;
+  text-align: center; }
+
+.page-id-8 .content {
+  padding: 0; }
+  .page-id-8 .content h2 {
+    display: inline;
+    line-height: 2.8rem;
+    padding: 0;
+    color: black;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+.page-id-8 p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  text-align: center; }
+
+/* =============================================================================
+                 Exhibition Page
+   ========================================================================== */
+.page-id-10 {
+  background: white; }
+  .page-id-10 .content {
+    padding-top: 15%; }
+  .page-id-10 p {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-align: center; }
+
+/* =============================================================================
+                 News Page
+   ========================================================================== */
+.blog .customize-support {
+  margin-top: 0%;
+  width: 100%; }
+.blog .content {
+  text-align: left;
+  border-top: 1px solid black; }
+.blog .header-container {
+  position: relative; }
+.blog .entry-title {
+  border-top: 1px solid black;
+  width: 33%;
+  position: relative;
+  top: -0.5rem; }
+.blog .entry-content {
+  width: 66%;
+  float: right;
+  border-top: 1px solid black;
+  position: relative;
+  top: -3.6rem;
+  padding-bottom: 60px; }
+.blog footer {
+  width: 33%;
+  float: left; }
+
+/* =============================================================================
+                   Featured Image/ BG
+   ========================================================================== */
+.container-with-background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed;
+  height: 100%;
+  padding-top: 0;
+  text-align: center; }
+
+/* =============================================================================
+                   Single Post
+   ========================================================================== */
+.single-post {
+  text-align: center; }
+  .single-post .content {
+    text-align: left;
+    padding: 0; }
+
+/* =============================================================================
+                   Footer
+   ========================================================================== */
+.footer-container {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  max-height: 0;
+  bottom: 0%; }
+  .footer-container p {
+    font-size: 1rem; }
+
+/* =============================================================================
+                   Navigation
+   ========================================================================== */
+ul.menu {
+  margin: 0;
+  padding: 0; }
+
+ul.menu li {
+  display: inline;
+  margin-right: 10px; }
+
+ul.menu li a {
+  color: #333;
+  padding: 10px;
+  background: #333;
+  color: white; }
 
 /* =============================================================================
                    Comment Styling
@@ -337,298 +630,3 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: block;
   height: 0;
   clear: both; }
-
-/* =============================================================================
-                   Default Styling
-   ========================================================================== */
-body {
-  color: #333;
-  margin: 0;
-  padding: 0; }
-
-.home .content .container p {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 5% 15%;
-  padding-top: 30%; }
-
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 5% 15%; }
-
-.content {
-  text-align: center;
-  padding-bottom: 200px; }
-
-.full {
-  width: 100%; }
-
-/* links */
-a {
-  color: black;
-  text-decoration: none; }
-
-a:hover {
-  color: #F5EEF9; }
-
-/* paragraphs */
-p {
-  font-family: 'Lora', times, serif;
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 1.1 rem; }
-
-/*blockquotes*/
-blockquote {
-  background: #F7F7F7;
-  margin: 0;
-  padding: 20px; }
-
-blockquote p {
-  margin-top: 0; }
-
-/*tables*/
-table td {
-  padding: 10px; }
-
-table tr td:first {
-  padding-right: 0; }
-
-/*def lists*/
-dt {
-  font-weight: 600;
-  padding-bottom: 5px; }
-
-dd {
-  padding: 10px;
-  margin-left: 10px; }
-
-/*lists*/
-ul li, ol li {
-  padding: 3px; }
-
-/*PRE*/
-pre {
-  background: #F7F7F7;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc; }
-
-/* =============================================================================
-                   Sidebar
-   ========================================================================== */
-.sidebar {
-  width: 30%;
-  float: left; }
-
-.sidebar ul {
-  margin: 0;
-  padding: 0; }
-
-.sidebar ul li {
-  list-style: none; }
-
-/* =============================================================================
-                   Header
-   ========================================================================== */
-.header {
-  position: relative;
-  width: 100%;
-  top: 0; }
-
-.header-container {
-  position: relative;
-  width: 100%;
-  top: 0;
-  text-align: center; }
-
-.mainTitle {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 3rem;
-  top: 6%;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
-.subNav {
-  font-family: 'Lora', times, serif;
-  text-transform: uppercase;
-  margin: 0 auto;
-  text-align: center;
-  top: 14%;
-  left: 38%; }
-  .subNav .lilNav {
-    font-size: 1.1rem;
-    display: inline-block;
-    text-align: center;
-    margin: 0 30px; }
-
-.left--header {
-  display: inline-block;
-  float: left;
-  font-family: 'Lora', times, serif;
-  font-size: 30px;
-  text-transform: uppercase;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  position: fixed;
-  left: -3%;
-  top: 45%; }
-
-.right--header {
-  display: inline-block;
-  float: left;
-  font-family: 'Lora', times, serif;
-  font-size: 30px;
-  text-transform: uppercase;
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg) translateY(-50);
-  position: fixed;
-  right: 1%;
-  top: 45%; }
-
-/* =============================================================================
-                   static landing page
-   ========================================================================== */
-.main .container .content p {
-  margin: 0 auto;
-  right: 0;
-  left: 0; }
-
-.home .content {
-  padding-top: 30%; }
-
-/* =============================================================================
-                 About Page
-   ========================================================================== */
-.page-id-40 {
-  background: white; }
-  .page-id-40 .header-container {
-    position: relative; }
-  .page-id-40 .footer-container {
-    position: relative; }
-  .page-id-40 h2 {
-    font-size: 1.1rem;
-    line-height: 3.6rem;
-    text-align: center; }
-  .page-id-40 p {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    text-align: center; }
-
-/* =============================================================================
-                 Artist Page
-   ========================================================================== */
-.bg-image {
-  background-image: url('<?php echo get_template_directory(); ?>/img/self_headoverheels3.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-attachment: fixed;
-  height: 100vh;
-  padding-top: 0;
-  text-align: center; }
-
-.page-id-8 .content {
-  padding-top: 15%; }
-.page-id-8 p {
-  font-size: 1.8rem;
-  line-height: 3.2rem;
-  text-align: center; }
-
-/* =============================================================================
-                 Exhibition Page
-   ========================================================================== */
-.page-id-10 {
-  background: white; }
-  .page-id-10 .content {
-    padding-top: 15%; }
-  .page-id-10 p {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-    text-align: center; }
-
-/* =============================================================================
-                 News Page
-   ========================================================================== */
-.blog .customize-support {
-  margin-top: 0%;
-  width: 100%; }
-.blog .content {
-  text-align: left;
-  border-top: 1px solid black; }
-.blog .header-container {
-  position: relative; }
-.blog .entry-title {
-  border-top: 1px solid black;
-  width: 33%;
-  position: relative;
-  top: -0.5rem; }
-.blog .entry-content {
-  width: 66%;
-  float: right;
-  border-top: 1px solid black;
-  position: relative;
-  top: -3.6rem;
-  padding-bottom: 60px; }
-.blog .post img {
-  width: 100%;
-  height: 100%; }
-.blog footer {
-  width: 33%;
-  float: left; }
-
-/* =============================================================================
-                   Featured Image/ BG
-   ========================================================================== */
-.container-with-background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-attachment: fixed;
-  height: 100vh;
-  padding-top: 0;
-  text-align: center; }
-
-/* =============================================================================
-                   Single Post
-   ========================================================================== */
-.single-post {
-  text-align: center; }
-  .single-post .content {
-    text-align: left;
-    padding: 200px 0; }
-
-/* =============================================================================
-                   Footer
-   ========================================================================== */
-.footer-container {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  max-height: 0;
-  bottom: 0%; }
-  .footer-container p {
-    font-size: 1rem; }
-
-/* =============================================================================
-                   Navigation
-   ========================================================================== */
-ul.menu {
-  margin: 0;
-  padding: 0; }
-
-ul.menu li {
-  display: inline;
-  margin-right: 10px; }
-
-ul.menu li a {
-  color: #333;
-  padding: 10px;
-  background: #333;
-  color: white; }

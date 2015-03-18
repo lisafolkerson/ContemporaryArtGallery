@@ -15,7 +15,7 @@
 </head>
 
 
-<body <?php body_class(); ?>>
+<body <?php body_class('bgimage'); ?>>
 
 <header class="clearfix">
   <div class="container header-container clearfix">

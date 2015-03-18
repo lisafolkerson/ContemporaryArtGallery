@@ -12,5 +12,5 @@ gulp.task( 'styles', function() {
 	});
 
 gulp.task( 'watch', function() {
-	gulp.watch('wp-content/themes/contemporary_art_gallery/style.scss',['styles'])
+	gulp.watch('wp-content/themes/contemporary_art_gallery/*.scss',['styles'])
 	});
