@@ -16,7 +16,7 @@ get_header();  ?>
 
             <img src="<?php echo $static ?>" style="display:none;" alt="">
 
-            <h2 class="static-page-bg" data-img="<?php echo $static; ?>"><a href="#"><?php the_title(); ?></a></h2><br>
+            <h2 class="static-page-bg" data-img="<?php echo $static; ?>"></h2>
             <?php //$title= get_the_title() ?>
 
 

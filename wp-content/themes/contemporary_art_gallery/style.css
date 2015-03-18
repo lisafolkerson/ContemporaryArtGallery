@@ -17,6 +17,12 @@ Author URI: http://www.lisafolkerson.com
 .alignright {
   float: right; }
 
+.alignleft {
+  padding-right: 5px; }
+
+.alignright {
+  padding-left: 5px; }
+
 .clear {
   width: 100%;
   float: left;
@@ -192,20 +198,33 @@ pre {
 /* =============================================================================
                  About Page
    ========================================================================== */
-.page-id-40 {
+.page-id-5 {
   background: white; }
-  .page-id-40 .header-container {
+  .page-id-5 .header-container {
     position: relative; }
-  .page-id-40 .footer-container {
+  .page-id-5 .footer-container {
     position: relative; }
-  .page-id-40 h2 {
+  .page-id-5 .container {
+    padding: 0; }
+  .page-id-5 .content {
+    padding: 0 15%; }
+  .page-id-5 h2 {
     font-size: 1.1rem;
     line-height: 3.6rem;
-    text-align: center; }
-  .page-id-40 p {
+    font-variant: small-caps;
+    font-size: 1rem;
+    display: inline;
+    padding: 0;
+    font-weight: 900;
+    display: inline-block;
+    position: relative;
+    top: 24px; }
+  .page-id-5 p {
     font-size: 1.8rem;
     line-height: 2.2rem;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Lora', times, serif;
+    font-weight: 800; }
 
 /* =============================================================================
                  Artist Page
@@ -213,6 +232,8 @@ pre {
 .postPhoto {
   display: none; }
 
+.page-id-8 .container {
+  padding-top: 0; }
 .page-id-8 .content {
   padding: 0; }
   .page-id-8 .content h2 {
@@ -220,7 +241,9 @@ pre {
     line-height: 2.8rem;
     padding: 0;
     color: black;
-    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    font-family: 'Lora', times, serif;
+    text-transform: uppercase; }
 .page-id-8 p {
   font-size: 1.8rem;
   line-height: 3.2rem;
@@ -231,8 +254,28 @@ pre {
    ========================================================================== */
 .page-id-10 {
   background: white; }
+  .page-id-10 .container {
+    padding-top: 0; }
   .page-id-10 .content {
-    padding-top: 15%; }
+    padding-top: 0%; }
+    .page-id-10 .content h2 {
+      display: block;
+      line-height: 2.8rem;
+      padding: 0;
+      color: black;
+      text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+      margin: 0;
+      font-family: 'Lora', times, serif;
+      text-transform: uppercase; }
+    .page-id-10 .content p {
+      font-variant: small-caps;
+      font-size: 1rem;
+      display: inline;
+      padding: 0;
+      font-weight: 900;
+      display: inline-block;
+      position: relative;
+      top: -24px; }
   .page-id-10 p {
     font-size: 1.8rem;
     line-height: 3.2rem;
