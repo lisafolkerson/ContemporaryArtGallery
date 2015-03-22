@@ -130,7 +130,8 @@ pre {
 .header {
   position: relative;
   width: 100%;
-  top: 0; }
+  top: 0;
+  background: red; }
 
 .header-container {
   position: relative;
@@ -284,32 +285,36 @@ pre {
 /* =============================================================================
                  News Page
    ========================================================================== */
-.blog .customize-support {
-  margin-top: 0%;
-  width: 100%; }
-.blog .content {
-  text-align: left;
-  border-top: 1px solid black; }
-.blog .header-container {
-  position: relative; }
-.blog .entry-title {
-  border-top: 1px solid black;
-  width: 33%;
-  position: relative;
-  top: -20px; }
-.blog .entry-content {
-  width: 66%;
-  float: right;
-  border-top: 1px solid black;
-  position: relative;
-  top: -3.6rem;
-  padding-bottom: 60px;
-  top: -20px; }
-.blog .post {
-  margin: 30px 0px; }
-.blog footer {
-  width: 33%;
-  float: left; }
+.blog {
+  background: orange; }
+  .blog .customize-support {
+    margin-top: 0%;
+    width: 100%; }
+  .blog .content {
+    text-align: left;
+    border-top: 1px solid black; }
+  .blog .header-container {
+    position: relative; }
+  .blog .entry-title {
+    border-top: 1px solid black;
+    width: 33%;
+    position: relative;
+    top: -20px;
+    font-size: 2vw;
+    background: yellow; }
+  .blog .entry-content {
+    width: 66%;
+    float: right;
+    border-top: 1px solid black;
+    position: relative;
+    top: -3.6rem;
+    padding-bottom: 60px;
+    top: -20px; }
+  .blog .post {
+    margin: 30px 0px; }
+  .blog footer {
+    width: 33%;
+    float: left; }
 
 /* =============================================================================
                    Featured Image/ BG
@@ -665,3 +670,4 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: block;
   height: 0;
   clear: both; }
+

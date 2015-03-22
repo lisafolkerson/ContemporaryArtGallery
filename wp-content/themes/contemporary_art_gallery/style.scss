@@ -173,7 +173,6 @@
       margin: 0;
       font-family: 'Lora', times, serif;
       text-transform: uppercase;
-
     }
 
     p {
@@ -193,7 +192,6 @@
     font-size: 1.8rem;
     line-height: 3.2rem;
     text-align: center;
-
   }
 }
 
@@ -222,6 +220,8 @@
     width: 33%; 
     position: relative;
     top: -20px;
+    font-size: 2vw;
+    
   }
 
   .entry-content {
@@ -251,9 +251,7 @@
 .bgimage {
   background-size: cover;
   background-repeat: no-repeat;
-  // background-position: static;
   background-attachment: fixed;
-  // height: 100%;
   padding-top: 0;
   text-align: center;
 
@@ -315,3 +313,4 @@ footer {
 
 @import "comments";
 @import "normailize";
+@import "mediaQueries";

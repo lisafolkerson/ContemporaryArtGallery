@@ -1,0 +1,20 @@
+@media (max-width: 900px) {
+	.blog {
+
+		.entry-title {
+		  border-top: 1px solid black;
+		  width: 33%; 
+		  position: relative;
+		  top: -20px;
+		  font-size: 2vw;
+
+		}
+	}
+
+	.page-id-5 {
+		p {
+			font-size: 1.3rem;
+			line-height: 2rem;
+		}
+	}
+}
