@@ -130,8 +130,7 @@ pre {
 .header {
   position: relative;
   width: 100%;
-  top: 0;
-  background: red; }
+  top: 0; }
 
 .header-container {
   position: relative;
@@ -276,7 +275,8 @@ pre {
       font-weight: 900;
       display: inline-block;
       position: relative;
-      top: -24px; }
+      top: -24px;
+      line-height: 3; }
   .page-id-10 p {
     font-size: 1.8rem;
     line-height: 3.2rem;
@@ -285,36 +285,33 @@ pre {
 /* =============================================================================
                  News Page
    ========================================================================== */
-.blog {
-  background: orange; }
-  .blog .customize-support {
-    margin-top: 0%;
-    width: 100%; }
-  .blog .content {
-    text-align: left;
-    border-top: 1px solid black; }
-  .blog .header-container {
-    position: relative; }
-  .blog .entry-title {
-    border-top: 1px solid black;
-    width: 33%;
-    position: relative;
-    top: -20px;
-    font-size: 2vw;
-    background: yellow; }
-  .blog .entry-content {
-    width: 66%;
-    float: right;
-    border-top: 1px solid black;
-    position: relative;
-    top: -3.6rem;
-    padding-bottom: 60px;
-    top: -20px; }
-  .blog .post {
-    margin: 30px 0px; }
-  .blog footer {
-    width: 33%;
-    float: left; }
+.blog .customize-support {
+  margin-top: 0%;
+  width: 100%; }
+.blog .content {
+  text-align: left;
+  border-top: 1px solid black; }
+.blog .header-container {
+  position: relative; }
+.blog .entry-title {
+  border-top: 1px solid black;
+  width: 33%;
+  position: relative;
+  top: -20px;
+  font-size: 2vw; }
+.blog .entry-content {
+  width: 66%;
+  float: right;
+  border-top: 1px solid black;
+  position: relative;
+  top: -3.6rem;
+  padding-bottom: 60px;
+  top: -20px; }
+.blog .post {
+  margin: 30px 0px; }
+.blog footer {
+  width: 33%;
+  float: left; }
 
 /* =============================================================================
                    Featured Image/ BG
@@ -671,3 +668,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 0;
   clear: both; }
 
+@media (max-width: 900px) {
+  .blog .entry-title {
+    border-top: 1px solid black;
+    width: 33%;
+    position: relative;
+    top: -20px;
+    font-size: 2vw; }
+  .page-id-5 p {
+    font-size: 1.3rem;
+    line-height: 2rem; } }
