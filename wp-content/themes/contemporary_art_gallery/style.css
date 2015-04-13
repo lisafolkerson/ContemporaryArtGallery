@@ -277,6 +277,8 @@ pre {
       position: relative;
       top: -24px;
       line-height: 3; }
+    .page-id-10 .content .date {
+      top: 0; }
   .page-id-10 p {
     font-size: 1.8rem;
     line-height: 3.2rem;
