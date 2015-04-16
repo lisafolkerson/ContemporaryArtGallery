@@ -1,8 +1,8 @@
 <?php 
 /* 
-*Template Name: Single Exhibition
+*Template Name: Single Artist
 */
-get_header();  ?>x
+get_header();  ?>
 
 <div class="main">
   <div class="container">
