@@ -10,7 +10,7 @@
       <img src="<?php echo $url ?>" style="display:none;" alt="">
       <div class="singlePostEx">
       <!-- name of the exhibition -->
-        <h2 data-img="<?php echo $url; ?>"><a href="<?php echo content_url(); ?>"><?php the_title(); ?></a></h2><?php the_content(); ?><br>
+        <h2 data-img="<?php echo $url; ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><?php the_content(); ?><br>
         
         <!-- start and end dates of the exhibition -->
         <?php if( get_field('date_start') ): ?>
