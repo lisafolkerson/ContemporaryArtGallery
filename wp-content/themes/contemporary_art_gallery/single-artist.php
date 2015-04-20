@@ -18,7 +18,7 @@ get_header();  ?>
             <?php wp_link_pages(array(
               'before' => '<div class="page-link"> Pages: ',
               'after' => '</div>'
-            )); ?>
+            )); ?> 
           </div><!-- .entry-content -->
 
         <div id="nav-below" class="navigation">

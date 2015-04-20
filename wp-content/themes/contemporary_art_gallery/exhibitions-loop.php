@@ -1,16 +1,19 @@
     <?php $latestPosts = new WP_Query(array(
         'post_type' => 'exhibition', //only want exhibition posts
     )) ?>
-
+        <!-- the custom loop, IF STATEMENT -->
         <?php if($latestPosts->have_posts()) while($latestPosts->have_posts()) : $latestPosts->the_post() ?>
 
 
       <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'large', true); ?>
 
+      <!-- do not display, but load the image -->
       <img src="<?php echo $url ?>" style="display:none;" alt="">
       <div class="singlePostEx">
       <!-- name of the exhibition -->
-        <h2 data-img="<?php echo $url; ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><?php the_content(); ?><br>
+        <h2 data-img="<?php echo $url; ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <!-- the artists name(S) -->
+        <?php the_content(); ?><br>
         
         <!-- start and end dates of the exhibition -->
         <?php if( get_field('date_start') ): ?>
