@@ -169,6 +169,7 @@ pre {
   font-family: 'Lora', times, serif;
   font-size: 30px;
   text-transform: uppercase;
+  -moz-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: fixed;
@@ -181,7 +182,8 @@ pre {
   font-family: 'Lora', times, serif;
   font-size: 30px;
   text-transform: uppercase;
-  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg) translateY(-50);
+  -webkit-transform: rotate(90deg) translateY(-50);
   transform: rotate(90deg) translateY(-50);
   position: fixed;
   right: 1%;
