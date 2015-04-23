@@ -14,7 +14,7 @@
         <h2 data-img="<?php echo $url; ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <!-- the artists name(S) -->
         <?php the_content(); ?><br>
-        
+         
         <!-- start and end dates of the exhibition -->
         <?php if( get_field('date_start') ): ?>
           <p class="date"><?php the_field('date_start'); ?> - 
@@ -23,4 +23,5 @@
       </div><!--end .singlePostEx-->
             
       <?php endwhile; // end the loop?>
-      <?php wp_reset_postdata(); ?>
+      <?php wp_reset_postdata(); ?> 
+      

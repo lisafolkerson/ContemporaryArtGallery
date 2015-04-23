@@ -42,6 +42,7 @@
 
 .left--header {
   @include sideMenus;
+ -moz-transform: rotate(-90deg);  
  -webkit-transform: rotate(-90deg);
  transform: rotate(-90deg);
  position: fixed;
@@ -50,11 +51,12 @@
 }
 
 .right--header {
-  @include sideMenus;
-  -webkit-transform: rotate(90deg);
+  @include sideMenus; 
+  -moz-transform: rotate(90deg) translateY(-50);  
+  -webkit-transform: rotate(90deg) translateY(-50);
   transform: rotate(90deg) translateY(-50);
   position: fixed;
-  right: 1%;
+  right: 1%; 
   top:45%;
 }
 
