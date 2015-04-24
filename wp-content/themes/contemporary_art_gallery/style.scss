@@ -43,7 +43,7 @@
 .left--header {
   @include sideMenus;
  -moz-transform: rotate(-90deg);  
- -webkit-transform: rotate(-90deg);
+ -webkit-transform: rotate(-90deg);      
  transform: rotate(-90deg);
  position: fixed;
  left: -3%;
